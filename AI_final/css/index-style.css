@@ -1,0 +1,183 @@
+body, html{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+body {
+  min-height:75vh;
+  position: relative;  
+  padding-top: 8vh;
+  padding-bottom: 17vh;
+}
+
+/* main  */
+#intro {
+  height: 92vh;
+  background-color: lightgray;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20vh;
+}
+
+#intro img {
+  max-width: 90vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 16.5vh; 
+  /* 12.6vh */
+  z-index: 2;
+}
+
+.button {
+  text-align: center;
+  background-color: sienna;
+  text-decoration: none;
+  color:white;
+  border-radius: 15px;
+  box-shadow: 3px 5px 8px gray;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+}
+.button:hover {
+  transform: scale(1.05);
+  background-color: rgb(163, 90, 56);
+}
+#intro .button, #intro button:visited {
+  padding: 3vh;
+  font-size: 5vh;
+  width: 80vw;
+  
+  position: relative;
+  top: 33vh;
+  z-index:1;
+  font-size:40px;
+  padding: 30px;
+  width: 70%;
+}
+
+#despre {
+  margin: 70px 10% 50px 10%;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+
+#motive { 
+  width: 40%; 
+  text-align: center;
+  margin: 2rem auto 6rem auto;
+  background-color: rgb(241, 238, 238);
+  box-shadow: 3px 4px 16px gray;
+  /* border: 1px solid gray; */
+  padding: 2rem;
+}
+#motive ul {
+  list-style-image: url(checked-icon.png);
+  padding-left: 0;
+}
+
+#cards {
+  display: flex;
+  flex-flow: row nowrap;  
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+}
+.card {
+  width: 30%;
+  border: 1px solid darkslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 3vh;
+  border-radius: 15px;
+}
+.card img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+}
+h3 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1300px) {
+  
+  /* cardurile mai mari */
+  .card {
+    width: 35%;
+  }  
+  
+}
+
+@media screen and (max-width: 1000px) {
+  
+  /* cardurile mai mari */
+  #motive { 
+    width: 60%; 
+  }
+  
+}
+
+
+@media screen and (max-width:1100px) {
+  #intro img {
+    max-width: 90vw;
+    height: auto;
+    
+    max-height: 50vh;
+    width: auto;
+
+  }
+}
+@media screen and (max-width: 700px) {
+  /* meniu burger */
+
+
+
+
+
+  /* cardurile mai mari */
+  #cards {
+    flex-flow: column nowrap;  
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+  }
+  .card {
+    width: 60%;
+    margin-bottom: 3rem;
+  }
+  
+}
+
+/* @media screen and (max-width: 1100px, min-width:800px){
+  #intro img {
+    width: auto;
+
+  }
+} */

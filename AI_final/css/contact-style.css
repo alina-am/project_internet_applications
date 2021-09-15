@@ -1,0 +1,68 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+body {
+  min-height:75vh;
+  position: relative;  
+  padding-top: 8vh;
+  padding-bottom: 17vh;
+}
+html {
+  min-height:100%;
+}
+
+#info{
+  width: 70%;
+  margin: 3rem auto 3rem auto;
+  min-width: 300px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgb(241, 238, 238);
+  box-shadow: 2px 3px 20px gray;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#maps{
+  width: 50%;
+  height: 20em;
+  border: 0;
+}
+#social img {
+  width: 50px;
+}
+#social a:hover{
+  opacity: 0.7;
+}
+
+form {
+  text-align: center;
+  width: 40%; 
+  margin: 2rem auto 4rem auto;
+  background-color: rgb(241, 238, 238);
+  box-shadow: 3px 4px 16px gray;
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+.modal {
+  width: 70%;
+  margin: 3rem auto 3rem auto;
+  min-width: 300px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgb(241, 238, 238);
+  box-shadow: 2px 3px 20px gray;
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center; 
+}
+

@@ -1,0 +1,5 @@
+Ce am facut (JS/PHP):
+- meniu burger pentru versiunea de mobil
+- meniul intr-un fisier separat PHP
+- mesaj de confirmare la primirea formularelor
+- pagina de admin

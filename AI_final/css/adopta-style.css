@@ -1,0 +1,156 @@
+body, html{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  min-height:75vh;
+  position: relative;  
+  padding-top: 8vh;
+  padding-bottom: 17vh;
+}
+
+/* main */
+.main {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 2rem;
+
+}
+.images {
+  margin-bottom: 3.5rem;
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  position: relative;
+  width: 21%;
+ 
+}
+.image {
+  width: 100%;
+  height: 350px;  
+  margin-bottom: 3rem;
+}
+.invisible {
+  position: absolute;
+  top: 0;  
+  left: 0;  
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 350px;
+  opacity: 0;
+  transition: .5 ease;
+  background-color: white;
+  
+}
+.card:hover .invisible{
+  opacity: 0.7;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+p{
+  font-size: 15px;
+
+}
+span{
+  font-weight: bold;
+}
+
+form {
+  border-radius: 1rem;
+  background-color: rgb(241, 238, 238);
+  box-shadow: 2px 3px 20px gray;
+  padding: 15px;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  min-width: 300px;
+  text-align: center;
+}
+
+#scrollup {
+  display: none;
+  position: fixed;
+  background-color: white;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: larger;
+  width: 40px;
+  height: 40px;
+  bottom: 10vh;
+  right: 2%;
+  border-radius: 50%;
+  border-width: 1px;
+ 
+}
+#scrollup:hover{
+  background-color: gray;
+}
+
+.modal {
+  width: 70%;
+  margin: 3rem auto 3rem auto;
+  min-width: 300px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgb(241, 238, 238);
+  box-shadow: 2px 3px 20px gray;
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1250px) {
+  
+  .card {
+    position: relative;
+    width: 30%;
+  }
+    
+  }
+
+@media screen and (max-width: 800px) {
+  
+  .card {
+    position: relative;
+    width: 45%;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+  .card {
+    position: relative;
+    width: 70%;
+  }
+  .images {
+    flex-flow: column nowrap;  
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+  }
+  
+}
